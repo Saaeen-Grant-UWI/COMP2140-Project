@@ -14,7 +14,7 @@
     <section>
         <div class="container">
             <form action="">
-            <input type="email" placeholder = "Enter Email Address" name = "l-name" required>
+            <input type="email" placeholder = "Enter Email Address" name = "email" required>
             <input type="password" placeholder="Enter Password" name="password" required>
             <button type="submit">Login</button>
             </form>
