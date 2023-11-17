@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/stylesheet/style.css">
 </head>
 <body>
     
@@ -13,17 +13,18 @@
     ?>
 
     <section>
-        <div class="container">
+        <div class="poster">
             <h1 class="hero-title-text">Find Critical Vehicle Information</h1>
-            <p class="hero-subtitle">non enim praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam</p>
+            <p class="hero-subtitle">Welcome to Gramac Auto Repair and Service Limited, where excellence is our standard. Utilize our website to schedule appointments, purchase genuine parts online, and receive detailed reports when necessary. Our dedicated professionals ensure top-notch service, guaranteeing your vehicle's longevity and performance. Drive confidently, knowing your vehicle is in the hands of professionals dedicated to quality service.</p>
             <a href="appointment.php" class="appointment-btn" id="hero-btn">Set Appointment</a>
             <ul>
-                <li><p>non enim</p></li>
-                <li><p>elementum facilisis</p></li>
-                <li><p>vel fringilla</p></li>
-                <li><p>est ullamcorper</p></li>
-                <li><p>facilisi etiam</p></li>
+                <li><p>Book Vehicle Service</p></li>
+                <li><p>View Vehicle Repair History</p></li>
+                <li><p>Buy Used & New Parts</p></li>
             </ul>
+        </div>
+        <div class="car-image-container">
+            <img class="car_image" src="car_image.jpg" alt="Description of the image">
         </div>
     </section>
     
