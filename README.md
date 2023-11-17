@@ -16,5 +16,5 @@ In your html file, remember to include the footer link. However, at this moment,
 
 ## Creating the CSS files for each page
 
-We decided to create the CSS files fo each page but remember that styling found in the style.css should not be repeated in each sheet. 
+We decided to create the CSS files fo each page but remember styling found in the style.css should not be repeated in each sheet. 
 
