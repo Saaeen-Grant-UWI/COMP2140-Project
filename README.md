@@ -16,5 +16,13 @@ In your html file, remember to include the footer link. However, at this moment,
 
 ## Creating the CSS files for each page
 
-We decided to create the CSS files fo each page but remember styling found in the style.css should not be repeated in each sheet. 
+We decided to create the CSS files fo each page but remember styling found in the style.css should not be repeated in each sheet.
 
+There is CSS for each page:
+
+- Homepage: homepage.php, homepage.css (Completed)
+- Login Page: login.php, login.css
+- Register Page: regsiter.php, register.css
+- Appointment Page: appointment.php, appointment.css
+- Parts Page: appointment.php, appointment.css
+- Contact Page: contact.php, contact.css
