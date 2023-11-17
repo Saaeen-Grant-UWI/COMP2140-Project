@@ -1,9 +1,13 @@
 -- Create table for customers
 CREATE TABLE customers (
   customer_id INT PRIMARY KEY AUTO_INCREMENT,
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(20), 
   email VARCHAR(255) NOT NULL UNIQUE,
   password VARCHAR(255) NOT NULL
 );
+
 
 -- Create table for vehicles
 CREATE TABLE vehicles (
