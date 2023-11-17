@@ -10,8 +10,7 @@ section {
 
 .hero-subtitle {
     font-size: 20px;
-    line-height: 1.5; /* Adjust the line height as needed */
-    /* Add any additional styles for the hero subtitle */
+    line-height: 1.5; 
 }
 
 .appointment-btn {
@@ -38,12 +37,12 @@ section {
 
 .poster {
     flex: 1;
-    padding: 80px 40px 40px; /* Add padding as needed */
+    padding: 80px 90px 40px; /* Add padding as needed */
 }
 
 .car-image-container {
     flex: 1;
-    max-width: 60%; /* Adjust the maximum width as needed */
+    max-width: 40%; /* Adjust the maximum width as needed */
     margin-top: 20px; /* Add margin space at the top as needed */
     padding-right: 70px;
     padding-top: 80px;
