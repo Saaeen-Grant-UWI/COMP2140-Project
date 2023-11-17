@@ -1,6 +1,6 @@
 # COMP2140-Project
 
-The following are instruction pertaining to the CSS. Please note that all CSS files are found in the folder, "stylesheet":
+The following are instructions pertaining to the CSS. Please note that all CSS files are found in the folder, "stylesheet":
 
 ## Header and Footer
 
@@ -20,9 +20,13 @@ We decided to create the CSS files fo each page but remember styling found in th
 
 There is CSS for each page:
 
-- Homepage: homepage.php, homepage.css (Completed)
+- Homepage: homepage.php, homepage.css (Partially Completed)
 - Login Page: login.php, login.css
 - Register Page: regsiter.php, register.css
-- Appointment Page: appointment.php, appointment.css
-- Parts Page: appointment.php, appointment.css
+- Appointment Page (consists of three parts: my information appointment-details and review-submit): appointment.php, appointment.css
+- Parts Page: appointment.php, appointment.css 
 - Contact Page: contact.php, contact.css
+
+Please stick to the colors sent in the group. The mockups for the home page and appointment page can be found in the google drive. 
+
+Use embedded javascript for buttons. 
