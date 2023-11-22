@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="error">
-        <h3></i> Oops! Page not found.</h3>
-
-        <p>
-            We could not find the page you were looking for.
-        </p>
-    </div>
+    
+  <h1>404</h1>
+  <h3>OOOPS PAGE NOT FOUND</h3>
     
 </body>
 </html>

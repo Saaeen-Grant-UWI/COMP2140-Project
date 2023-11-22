@@ -9,14 +9,14 @@
 <body>
     
     <?php 
-        include('includes/header.php');
+        $this->view('includes/header');
     ?>
 
     <section>
         <div class="container">
             <h1 class="hero-title-text">Find Critical Vehicle Information</h1>
             <p class="hero-subtitle">non enim praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam</p>
-            <a href="appointment.php" class="appointment-btn" id="hero-btn">Set Appointment</a>
+            <a href="<?=ROOT?>/Appointment" class="appointment-btn" id="hero-btn">Set Appointment</a>
             <ul>
                 <li><p>non enim</p></li>
                 <li><p>elementum facilisis</p></li>
@@ -26,6 +26,10 @@
             </ul>
         </div>
     </section>
+
+    <?php 
+        $this->view('includes/footer');
+    ?>
     
 </body>
 </html>

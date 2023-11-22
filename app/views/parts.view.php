@@ -8,7 +8,7 @@
 <body>
 
     <?php 
-        include('includes/header.php');
+        $this->view('includes/header');
     ?>
 
     <div class="parts-list">
@@ -26,6 +26,10 @@
             <?php endfor ?>
         </div>
     </div>
+
+    <?php 
+        $this->view('includes/footer');
+    ?>
     
 </body>
 </html>
