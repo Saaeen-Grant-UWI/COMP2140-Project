@@ -43,7 +43,7 @@
                         <?php } ?>
                     </div>
                     <div>
-                        <input value="<?= set_value("password")?>" type="password" placeholder="Enter Password" name="password" class="<?=!(empty($data["errors"]["password"])) ? 'border-error' : ''?>" required1>
+                        <input value="<?= set_value("password")?>" type="text" placeholder="Enter Password" name="password" class="<?=!(empty($data["errors"]["password"])) ? 'border-error' : ''?>" required1>
                     </div>
                     <div>
                         <input type="password" placeholder="Confirm Password" name="confirm_password" class="<?=!(empty($data["errors"]["password"])) ? 'border-error' : ''?>" required1>

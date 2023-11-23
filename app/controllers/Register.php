@@ -17,6 +17,7 @@ class Register extends Controller {
             $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
             $users->insert(($_POST));
 
+            message("Account succesfully created");
             redirect("Login");
          }
 

@@ -39,6 +39,20 @@ class Model extends Database {
         }
     }
 
+    public function where_all() {
+
+        $query = "select * from ".$this->table;
+        
+        $query = trim($query,"&& ");
+        $result = $this->query($query, []);
+        
+        if(is_array($result)) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+
     public function first($data) {
 
         $keys = array_keys($data);

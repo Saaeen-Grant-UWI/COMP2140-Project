@@ -41,7 +41,7 @@ class Appointment extends Controller {
                $vehicle->insert($_POST);
                $appointment->insert($_POST);
 
-               
+               message('Appointment was succesfully made');
                redirect("Home");
                
             }

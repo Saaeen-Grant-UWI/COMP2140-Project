@@ -46,6 +46,33 @@ class Appointments extends Model {
     }
 
 
+   public function admin_appointments($admin_id, $order = 'asc') {
+
+        $query = "select appointments.*, appointment_times.admin_id from appointments join appointment_times on appointments.time = appointment_times.appointment_time where appointment_times.admin_id = '$admin_id' order by appointments.id $order" ;
+        $result = $this->query($query, []);
+        
+        if(is_array($result)) {
+            return $result;
+
+        } else {
+            return false;
+        }
+    }
+
+    public function admin_id($user_id) {
+
+        $query = "select admin.id from `admin` where admin.user_id = '$user_id'";
+        $result = $this->query($query, []);
+        
+        if(is_array($result)) {
+            return $result[0];
+
+        } else {
+            return false;
+        }
+    }
+
+
     public function getErros() {
         return $this->erros;
     }

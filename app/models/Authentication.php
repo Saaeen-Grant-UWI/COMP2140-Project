@@ -42,7 +42,6 @@ class Authentication {
 
     public static function __callStatic($agr1,$agr2) {
 
-
         $key =  str_replace("get","",strtolower($agr1));
         
         if(!(empty($_SESSION['USER_DATA']->$key))) {

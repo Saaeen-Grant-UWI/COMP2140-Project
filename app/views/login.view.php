@@ -14,6 +14,9 @@
     <section>
         <div class="container">
             <form action="" method="post" novalidate>
+            <?php if(message()) { ?>
+                <div class="login-message"><?=message('',true)?></div>
+            <?php } ?>
             <div>
                 <input value="<?= set_value("email")?>" type="email" placeholder = "Enter Email Address" name = "email" required1>
 

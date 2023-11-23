@@ -13,4 +13,22 @@ function redirect($page) {
     die;
 }
 
+function message($message = '', $kill = false) {
+
+   if(!(empty($message))) {
+        $_SESSION['message'] = $message;
+   } else {
+        if(!(empty($_SESSION['message']))) {
+            $message = $_SESSION['message'];
+            if($kill) {
+                unset($_SESSION['message']);
+            }
+            return $message;
+        }
+   }
+
+   return false;
+}
+ 
+
 ?>

@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <H1>ADMIN YEAHHH</H1>
+    <?php 
+        $this->view('admin/admin-header');
+    ?>
+    <?php 
+        $this->view('admin/admin-sidebar');
+    ?>
 </body>
 </html>

@@ -12,6 +12,10 @@
         $this->view('includes/header');
     ?>
 
+    <?php if(message()) { ?>
+        <div class="appointment-message"><?=message('',true)?></div>
+    <?php } ?>
+
     <section>
         <div class="container">
             <h1 class="hero-title-text">Find Critical Vehicle Information</h1>
