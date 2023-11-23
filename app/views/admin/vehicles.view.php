@@ -23,6 +23,7 @@
     <?php
 
         $vehicle = new Vehicles(); 
+        $row = [];
 
         if(array_key_exists('find', $_GET)) {
 
