@@ -17,7 +17,15 @@ class Admin extends Controller {
                 case 'Admin/Vehicles':
                     $this->Vehicles();
                     break;
-            
+
+                case 'Admin/Jobs':
+                    $this->Jobs();
+                    break;
+
+                case 'Admin/Report':
+                    $this->Report();
+                    break;
+
                 default:
                     $this->view('admin/admin',$data);
                     break;
@@ -30,15 +38,59 @@ class Admin extends Controller {
     }
 
     public function Appointments() {
+        $appointment = new Appointments();
 
         $data["title"] = "Appointments";
+        $data["appointments"] =  $appointment->admin_appointments($appointment->admin_id(Authentication::getID())->id); 
         $this->view('admin/appointments',$data);
     }
 
     public function Vehicles() {
+        $vehicles = new Vehicles(); 
+    
+        if(array_key_exists('plate_search',$_GET)) {
+            if(!empty($_GET['plate_search'])) {
+                 $data['vehicles'] = $vehicles->where(['vehicle_plate_number'=>$_GET['plate_search']]);
+            } else {
+                $data['vehicles'] = $vehicles->where_all();
+            }
+         } else {
+             $data['vehicles'] = $vehicles->where_all();
+         }
 
         $data["title"] = "Vehicles";
         $this->view('admin/vehicles',$data);
+    }
+
+    public function Jobs() {
+        $services = new Services();
+        $appointment = new Appointments();
+        $appointment_row = $appointment->admin_appointments($appointment->admin_id(Authentication::getID())->id);
+        $appointment_id_str = "";
+
+        $data['services'] = [];
+        foreach ($appointment_row as $key => $value) {
+            $appointment_id_str.= $value->id.",";
+        }
+        $appointment_id_str = trim($appointment_id_str,",");
+
+    
+        if(array_key_exists('job_id',$_GET)) {
+           if(!empty($_GET['job_id'])) {
+                $data['services'] = $services->where(['related_appointment_id'=>$_GET['job_id']]);
+           }
+        } else {
+            $data['services'] = $services->query("SELECT * FROM `services` WHERE related_appointment_id IN ($appointment_id_str)", []);
+        }
+
+
+        $data["title"] = "Jobs";
+        $this->view('admin/jobs',$data);
+    }
+
+    public function Report() {
+        $data["title"] = "Report";
+        $this->view('admin/report',$data);
     }
 
 }
