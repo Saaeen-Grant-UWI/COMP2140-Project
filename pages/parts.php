@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="parts.css">
+    <title>Contact Form</title>
 </head>
 <body>
 
@@ -11,21 +12,26 @@
         include('includes/header.php');
     ?>
 
-    <div class="parts-list">
-        <div class="container">
-            <?php for ($i = 1;$i <= 5; $i++) : ?>
-                <div class="part-listing">
-                    <h2>Part</h2>
-                    <p>Origin</p>
-                    <p>Description</p>
-                    <p>stock</p>
-                    <h3>$0.00</h3>  
-                    <input type="number" placeholder="Number of Parts">
-                    <button class="part-request">Request Part</button>
-                </div>
-            <?php endfor ?>
-        </div>
+    <h1 id="pageHeading">Parts Inquiry</h1>
+    <div class="container">
+        <h1>We have everything you need, Contact Us!</h1>
+          <form id="contactForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="inquiry">Ask us, we have it!:</label>
+              <textarea id="inquiry" name="inquiry" rows="8" required></textarea>
+
+              <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+
+
+        <div id="response"></div>
     </div>
-    
+
+    <script src="parts.js"></script>
 </body>
 </html>
