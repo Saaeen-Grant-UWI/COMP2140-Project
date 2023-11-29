@@ -58,19 +58,15 @@ ul li a {
 
 
 /* end of base css*/
-#pageHeading {
-    margin: 20px; 
-    color: #e1e1e1;
-    position:fixed;
-    top: 0;
-    left:0;
-}
 
 .contact {
-    background-color: #b6afac;
-    padding: 20px;
+    background-color: white;
+    padding: 40px;
     border-radius: 8px;
+    width:50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    margin: 20px auto;
 }
 
 form {
@@ -85,13 +81,13 @@ label {
 input, textarea {
     margin-bottom: 16px;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 4px;
 }
 
 button {
     padding: 10px;
-    background-color: #0c0c0c;
+    background-color: #7d0418;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -99,7 +95,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(5, 5, 5);
+    background-color: #5E131F;
 }
 
 #response {

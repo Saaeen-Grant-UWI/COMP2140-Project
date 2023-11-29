@@ -11,7 +11,7 @@
     <?php 
         include('includes/header.php');
     ?>
-    
+
     <div class="contact">
         <h1>We have everything you need, Contact Us!</h1>
           <form id="contactForm">
@@ -26,8 +26,6 @@
 
               <button type="button" onclick="submitForm()">Submit</button>
             </form>
-
-
         <div id="response"></div>
     </div>
 
