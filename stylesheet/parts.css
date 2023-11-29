@@ -1,14 +1,63 @@
+/*base css*/
 body {
-    font-family: Arial, sans-serif;
-    background-color: #8c2c3a;
     margin: 0;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
-    height: 100vh;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #1e1e1e;
 }
 
+
+header {
+    background-color: #5E131F; /* Add your desired background color */
+    color: white; /* Add your desired text color */
+    padding: 20px 20px 20px 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+ul li a {
+    text-decoration: none;
+    color: white; /* Add your desired text color */
+}
+
+.call-to-action-container {
+    display: flex;
+}
+
+.call-to-action-container a {
+    margin-left: 10px; /* Adjust the margin as needed */
+    text-decoration: none;
+    color: white; /* Add your desired text color */
+    border: 1px solid white; /* Add a border to the buttons */
+    padding: 8px 15px; /* Add padding to the buttons for better appearance */
+    border-radius: 20px; /* Optional: Add border-radius for rounded corners */
+}
+
+
+/* end of base css*/
 #pageHeading {
     margin: 20px; 
     color: #e1e1e1;
@@ -17,7 +66,7 @@ body {
     left:0;
 }
 
-.container {
+.contact {
     background-color: #b6afac;
     padding: 20px;
     border-radius: 8px;

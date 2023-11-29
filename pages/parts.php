@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="parts.css">
+    <link rel="stylesheet" href="../stylesheet/parts.css">
     <title>Contact Form</title>
 </head>
 <body>
@@ -11,9 +11,8 @@
     <?php 
         include('includes/header.php');
     ?>
-
-    <h1 id="pageHeading">Parts Inquiry</h1>
-    <div class="container">
+    
+    <div class="contact">
         <h1>We have everything you need, Contact Us!</h1>
           <form id="contactForm">
               <label for="name">Name:</label>
