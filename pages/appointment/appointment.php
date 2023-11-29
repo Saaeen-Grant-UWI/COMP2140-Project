@@ -3,25 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="appointment.css">
+    <title>Set Up Appointment</title>
 </head>
 <body>
-
-    <?php 
-        include('includes/header.php');
-    ?>
-
     <section>
         <div class="container">
             <form action="">
                 <?php 
-                    include('includes/appointment-details.php');
+                    include('../appointment/appointment-details.php');
                 ?>
                 <?php 
-                    include('includes/my-information.php');
+                    include('../includes/my-information.php');
                 ?>        
                 <?php 
-                    include('includes/review-submit.php');
+                    include('../includes/review-submit.php');
                 ?>
             </form>
         </div>
