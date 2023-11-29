@@ -76,6 +76,12 @@ form {
 
 label {
     margin-bottom: 8px;
+    color: black;
+    font-weight: bold;
+}
+
+h1{
+    color:  #7d0418;
 }
 
 input, textarea {
