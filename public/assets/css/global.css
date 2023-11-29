@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(219, 219, 219);
+    height: 60px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header .container ul {
+    display: flex;
+    gap: 16px;
+}
+
+.call-to-action-container {
+    display: flex;
+    gap: 16px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.home-section .container {
+    min-height: calc(100vh - 120px);
+    padding: 92px 0;
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    grid-gap: 124px;
+}
+
+.noaccount-section,.register-section .container, .login-section .container {
+    min-height: calc(100vh - 120px);
+    padding: 92px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+
+.register-section .container form, .login-section .container form {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.login-section .container h1, .register-section .container h1 {
+    font-size: 56px;
+}
+
+.register-section .container a ,.login-section .container a {
+    text-decoration: underline;
+}
+
+
+.login-section .container input, .login-section .container button, .register-section .container input, .register-section .container button {
+    width: 100%;
+    padding: 12px 8px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+} 
+
+.register-section .container .normal-border{
+    border: 1px solid black;
+}
+
+.register-section .container .border-error {
+    border: 1px solid brown;
+}
+
+
+ .login-section .container input {
+    border: 1px solid black;
+
+}
+
+
+.error-message {
+   color: brown;
+   padding: 4px;
+}
+
+.register-section .container button,.login-section .container button {
+    background-color: brown;
+    color: white;
+}
+
+.name-input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.name-input-container div {
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h1{
+    font-size: 56px;
+}
+
+.appointment-btn,.about-btn, .left p {
+    width: 540px;
+}
+
+.appointment-btn {
+    background-color: brown;
+    color: white;
+    padding: 16px 0;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 24px;
+
+}
+
+.about-btn {
+    border: 1px solid black;
+    padding: 6px 0;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.right {
+    background-color: brown;
+}
+
+.noaccount-section {
+    text-align: center;
+}
+
+.noaccount-section h1 {
+    font-size: 52px;
+    margin-bottom: 32px;
+}
+
+.noaccount-section a {
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+.noaccount-section a:first-of-type {
+    color: brown;
+}
+
+.noaccount-section a:nth-of-type(2) {
+    margin-left: 12px;
+}

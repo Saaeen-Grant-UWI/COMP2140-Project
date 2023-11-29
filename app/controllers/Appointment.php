@@ -38,7 +38,10 @@ class Appointment extends Controller {
 
                }
 
-               $vehicle->insert($_POST);
+               if(!($vehicle->where(['vehicle_plate_number'=>$_POST['vehicle_plate_number']]))) {
+                  $vehicle->insert($_POST);
+               }
+               
                $appointment->insert($_POST);
 
                message('Appointment was succesfully made');

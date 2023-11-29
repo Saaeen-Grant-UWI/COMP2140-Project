@@ -27,7 +27,7 @@ class Admin extends Controller {
                     break;
 
                 default:
-                    $this->view('admin/admin',$data);
+                    $this->Appointments();;
                     break;
             }
             
@@ -89,7 +89,20 @@ class Admin extends Controller {
     }
 
     public function Report() {
+        $vehicle = new Vehicles(); 
+        $user = new Users();
+        $appointments = new Appointments();
+        $services = new Services();
+        
+
+
         $data["title"] = "Report";
+        $data["vehicle_data"] = $vehicle->query("select * from vehicles where vehicles.vehicle_plate_number = 'J6SJ5R'",[])[0];
+        $data["user_data"] = $user->query("select * from users where users.id = '6'",[])[0];
+        $data["appointments_data"] = $appointments->query("select * from appointments where appointments.vehicle_plate_number = 'J6SJ5R'",[]);
+        $data["services_data"] = $services->query("select * from services where services.vehicle_plate_number = 'J6SJ5R'",[]);
+
+        // 
         $this->view('admin/report',$data);
     }
 

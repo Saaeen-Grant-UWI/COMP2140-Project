@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../public/assets/css/global.css">
+
 </head>
 <body>
     
@@ -11,8 +13,9 @@
         $this->view('includes/header');
     ?>
 
-    <section>
+    <section class="login-section">
         <div class="container">
+            <h1>Login</h1>
             <form action="" method="post" novalidate>
             <?php if(message()) { ?>
                 <div class="login-message"><?=message('',true)?></div>
