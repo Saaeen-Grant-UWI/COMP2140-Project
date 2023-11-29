@@ -74,6 +74,7 @@
             <textarea name="comments" id="comments" cols="45" rows="1"></textarea>
         </div>
         <button id="Continue" >Continue</button>
+        <h2><a href="#my-information-section">My Information</a></h2>
     </div>
 </body>
 </container>
