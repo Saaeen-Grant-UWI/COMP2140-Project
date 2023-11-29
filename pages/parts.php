@@ -21,7 +21,7 @@
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" required>
 
-              <label for="inquiry">Ask us, we have it!:</label>
+              <label for="inquiry">Need a Part? Ask us!:</label>
               <textarea id="inquiry" name="inquiry" rows="8" required></textarea>
 
               <button type="button" onclick="submitForm()">Submit</button>
@@ -29,6 +29,6 @@
         <div id="response"></div>
     </div>
 
-    <script src="parts.js"></script>
+    <script src="../script/parts.js"></script>
 </body>
 </html>
