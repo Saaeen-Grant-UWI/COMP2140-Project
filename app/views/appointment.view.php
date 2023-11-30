@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Set An Appointment</title>
     <script src="../public/assets/javascript/form-review.js"></script>
     <link rel="stylesheet" href="../public/assets/css/appointment.css">
 </head>
@@ -138,8 +138,12 @@
                 <button id="btn-to-review-submit" type="button">Review</button>
                 <?php 
                     $this->view('includes/review-submit');
-                ?>          
+                ?>
+
+                <button id="download-invoice" type="button">Download Invoice</button> <!-- Added button for downloading invoice -->
+
                 <button type="submit">Submit</button>
+
             </form>
         </div>
     </section>
