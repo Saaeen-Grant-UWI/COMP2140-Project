@@ -25,7 +25,7 @@
                 <br>
                 <p class="hero-subtitle">Welcome to Gramac Auto Repair and Service Limited, where excellence is our standard. Utilize our website to schedule appointments, purchase genuine parts online, and receive detailed reports when necessary. Our dedicated professionals ensure top-notch service, guaranteeing your vehicle's longevity and performance. Drive confidently, knowing your vehicle is in the hands of professionals dedicated to quality service.</p>
                 <a href="<?=ROOT?>/Appointment" class="appointment-btn" >Set Appointment</a>
-                <a href="" class="about-btn">Learn More</a>
+                <a href="../app/views/parts.view.php" class="about-btn">Parts Inquiry</a>
            </div>
            
            
