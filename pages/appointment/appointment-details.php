@@ -9,6 +9,15 @@
 
             $(this).addClass('clicked');
         });
+        $('a[href^="#"]').on('click', function(event) {
+            var target = $($(this).attr('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
     });
     </script>
     
@@ -22,7 +31,7 @@
         <div class="progress-title">	
             <ul id="progressbar">
                 <li class="active">Appointment Details</li>
-                <li>My Information</li>
+                <li><a href="#my-information-section">My Information</a></li>
                 <li>Review & Submit</li>
             </ul>
         </div>
@@ -73,8 +82,33 @@
             <h2>Additional Comments</h2>
             <textarea name="comments" id="comments" cols="45" rows="1"></textarea>
         </div>
-        <button id="Continue" >Continue</button>
+        <!-- my-information.php -->
         <h2><a href="#my-information-section">My Information</a></h2>
+        <?php include('../includes/my-information.php'); ?>
+        <div class="my-information">
+            <div class="your-information">
+                <h3>Your Information</h3>
+                <input type="text" placeholder="Enter First Name" name="f-name" autocomplete="given-name">
+                <input type="text" placeholder="Enter Last Name" name="l-name" autocomplete="family-name">
+                <input type="text" placeholder="Enter Email Address" name="email" autocomplete="email">
+                <input type="text" placeholder="Enter Phone Number" name="phone" autocomplete="tel">
+            </div>
+            <div class="vehicle-information">
+                <h3>Vehicle Information</h3>
+                <select name="year" id="yearDropdown">
+                    <?php
+                        $currentYear = date("Y");
+                        for ($year = 2000; $year <= 2025; $year++) {
+                            echo "<option value=\"$year\">$year</option>";
+                        }
+                    ?>
+                </select>
+                <input type="text" placeholder="Enter Make" name="make">
+                <input type="text" placeholder="Enter Model" name="model">
+                <input type="text" placeholder="Enter Additional Model Info" name="add-model">
+            </div>
+        </div>
+        <button id="Continue" >Continue</button>
     </div>
 </body>
 </container>
