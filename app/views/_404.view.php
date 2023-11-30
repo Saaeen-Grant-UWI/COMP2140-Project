@@ -16,10 +16,6 @@
   <h3>OOOPS PAGE NOT FOUND</h3>
 
 
-  <?php 
-        $this->view('includes/footer');
-    ?>
-
     
 </body>
 </html>

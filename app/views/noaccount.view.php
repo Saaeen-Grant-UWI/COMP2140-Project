@@ -21,10 +21,6 @@
            <a href="<?=ROOT?>/Register">I do not have an account</a>
         </div>
     </section>
-
-    <?php 
-        $this->view('includes/footer');
-    ?>
     
 </body>
 </html>

@@ -8,11 +8,9 @@
 
 </head>
 <body>
-    
     <?php 
         $this->view('includes/header');
     ?>
-    
     <section class="register-section">
         <div class="container">
                 <h1>Register</h1>
@@ -63,10 +61,5 @@
             <a href="<?=ROOT?>/Login">I already have an account</a>
         </div>
     </section>
-
-    <?php 
-        $this->view('includes/footer');
-    ?>
-
 </body>
 </html>

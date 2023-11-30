@@ -28,10 +28,5 @@
             <?php endfor ?>
         </div>
     </div>
-
-    <?php 
-        $this->view('includes/footer');
-    ?>
-    
 </body>
 </html>

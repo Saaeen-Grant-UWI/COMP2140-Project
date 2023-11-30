@@ -22,23 +22,20 @@
         <div class="container">
            <div class="left">
                 <h1 class="hero-title-text">Find Critical Vehicle Information</h1>
-                <p class="hero-subtitle">non enim praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam</p>
+                <br>
+                <p class="hero-subtitle">Welcome to Gramac Auto Repair and Service Limited, where excellence is our standard. Utilize our website to schedule appointments, purchase genuine parts online, and receive detailed reports when necessary. Our dedicated professionals ensure top-notch service, guaranteeing your vehicle's longevity and performance. Drive confidently, knowing your vehicle is in the hands of professionals dedicated to quality service.</p>
                 <a href="<?=ROOT?>/Appointment" class="appointment-btn" >Set Appointment</a>
                 <a href="" class="about-btn">Learn More</a>
-                <ul>
-                    <li><p>Book Vehicle Service</p></li>
-                    <li><p>View Vehicle Repair History</p></li>
-                    <li><p>Buy Used & New Parts</p></li>
-                </ul>
            </div>
-           <div class="right">
-           </div>
+           
+           
+           <div class="car-image-container">
+            <img class="car_image" src="../public/assets/car.png" alt="Description of the image">
+            </div>
+
         </div>
     </section>
-
-    <?php 
-        $this->view('includes/footer');
-    ?>
     
 </body>
 </html>
+

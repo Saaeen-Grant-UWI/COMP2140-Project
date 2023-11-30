@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../public/assets/javascript/form-review.js"></script>
-    <link rel="stylesheet" href="../public/assets/css/global.css">
-
+    <link rel="stylesheet" href="../public/assets/css/appointment.css">
 </head>
 <body>
-
-    <?php 
-        $this->view('includes/header');
-    ?>
-
+    <h1 style = "padding-top: 15px;">Set An Appointment</h1>
     <section>
         <div class="container">
             <form id="appointment-form" action="" method="post">
@@ -27,6 +22,7 @@
                         <?php } ?>
                     </div>
                     <div class="appointment-time-options">
+                        <label for="appointment-date"><h3>Preferred Date of Request</h3></label>
                         <input class="appoint-details-input" type="radio"  name="time" value="08:00AM - 10:00AM">
                         <label for="time">08:00AM - 10:00AM</label>
                         <input class="appoint-details-input" type="radio"  name="time" value="10:00AM - 12:00AM">
@@ -55,20 +51,25 @@
                     </div>
 
                     <div class="service-options">
-                        <h3>Select Service(s)</h3>
-                        <ul>
-                            <?php for ($i = 1;$i <= 16; $i++) : ?>
-                                <li>
-                                    <input class="appoint-details-input" type="checkbox"  name="services[]" value="service <?=$i?>">
-                                    <label for="service">Service <?=$i?></label>
-                                </li>
-                            <?php endfor ?>
+                    <h2>Service(s) Needed</h2>
+                    <div class="checkbox-options">
+                        <?php
+                        $services = [
+                            'Alignment', 'Battery', 'Exhaust', 'Oil Change', 'Tires', 'Brakes',
+                            'Suspension', 'Transmission', 'Engine', 'Heating & Cooling', 'Interior',
+                            'Exterior', 'Electrical', 'Accessories', 'Body Work', 'Glass', 'Lights',
+                            'Paint', 'Wheels', 'Other'
+                        ];
 
-                            <?php if(!(empty($data["errors"]['services']))) {?>
-                                <div class="error-message"><?=$data["errors"]['services']?></div>
-                            <?php } ?>
-                        </ul>
-                        
+                        foreach ($services as $index => $service) :
+                        ?>
+                            <label><input type="checkbox" name="services[]" value="<?= $service ?>"> <?= $service ?></label>
+                        <?php endforeach; ?>
+                    </div>
+
+                    <?php if (!(empty($data["errors"]['services']))) : ?>
+                        <div class="error-message"><?= $data["errors"]['services'] ?></div>
+                    <?php endif; ?> 
                     </div>
                 </div>
 
@@ -134,7 +135,7 @@
                     </div>
                 </div>
 
-                <button id="btn-to-review-submit" type="button">TEST</button>
+                <button id="btn-to-review-submit" type="button">Review</button>
                 <?php 
                     $this->view('includes/review-submit');
                 ?>          
@@ -143,9 +144,5 @@
         </div>
     </section>
 
-    <?php 
-        $this->view('includes/footer');
-    ?>
-    
 </body>
 </html>
