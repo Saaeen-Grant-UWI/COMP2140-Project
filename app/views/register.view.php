@@ -64,9 +64,5 @@
         </div>
     </section>
 
-    <?php 
-        $this->view('includes/footer');
-    ?>
-
 </body>
 </html>

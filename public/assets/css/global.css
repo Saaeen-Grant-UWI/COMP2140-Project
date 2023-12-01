@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -15,12 +16,18 @@ ul {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1256px;
     margin: 0 auto;
 }
 
+h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+
 header {
-    background-color: rgb(219, 219, 219);
+    background-color: #5E131F;
     height: 60px;
 }
 
@@ -29,6 +36,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    color: white;
 }
 
 header .container ul {
@@ -42,7 +50,7 @@ header .container ul {
 }
 
 footer {
-    background-color: black;
+    background-color: #1e1e1e;
     color: white;
     display: flex;
     justify-content: center;
@@ -52,15 +60,16 @@ footer {
 
 .home-section .container {
     min-height: calc(100vh - 120px);
-    padding: 92px 0;
+    padding: 56px 0;
     display: grid;
-    grid-template-columns: 1fr 450px;
+    grid-template-columns: 1fr 600px;
     grid-gap: 124px;
+    align-items: center;
 }
 
-.noaccount-section,.register-section .container, .login-section .container {
+.parts, .noaccount-section,.register-section .container, .login-section .container {
     min-height: calc(100vh - 120px);
-    padding: 92px 0;
+    padding: 56px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,8 +85,8 @@ footer {
     gap: 14px;
 }
 
-.login-section .container h1, .register-section .container h1 {
-    font-size: 56px;
+.parts .container h1, .login-section .container h1, .register-section .container h1 {
+    font-size: 52px;
 }
 
 .register-section .container a ,.login-section .container a {
@@ -94,27 +103,26 @@ footer {
 } 
 
 .register-section .container .normal-border{
-    border: 1px solid black;
+    border: 1px solid #1e1e1e;
 }
 
 .register-section .container .border-error {
-    border: 1px solid brown;
+    border: 1px solid #5E131F;
 }
 
 
  .login-section .container input {
-    border: 1px solid black;
+    border: 1px solid #1e1e1e;
 
 }
 
-
 .error-message {
-   color: brown;
-   padding: 4px;
+   color: #5E131F;
+   padding: 4px 0;
 }
 
 .register-section .container button,.login-section .container button {
-    background-color: brown;
+    background-color: #5E131F;
     color: white;
 }
 
@@ -138,12 +146,16 @@ footer {
     font-size: 56px;
 }
 
+.left p {
+    margin-top: 12px;
+}
+
 .appointment-btn,.about-btn, .left p {
     width: 540px;
 }
 
 .appointment-btn {
-    background-color: brown;
+    background-color: #5E131F;
     color: white;
     padding: 16px 0;
     border-radius: 50px;
@@ -153,7 +165,7 @@ footer {
 }
 
 .about-btn {
-    border: 1px solid black;
+    border: 1px solid #1e1e1e;
     padding: 6px 0;
     border-radius: 50px;
     text-align: center;
@@ -162,7 +174,12 @@ footer {
 }
 
 .right {
-    background-color: brown;
+    background-image: url("car.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: visible;
+    background-position: center;
+    height: 680px;
 }
 
 .noaccount-section {
@@ -180,9 +197,256 @@ footer {
 }
 
 .noaccount-section a:first-of-type {
-    color: brown;
+    color: #5E131F;
 }
 
 .noaccount-section a:nth-of-type(2) {
     margin-left: 12px;
 }
+
+.form-content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.appointment-details {
+    grid-area: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    display: flex;    
+
+}
+
+.my-information {
+    grid-area: 1 / 1;
+}
+
+.review-submit {
+    grid-area: 1 / 1;
+
+}
+
+.form-progress {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+.form-progress .progress-section {
+    width: 100%;
+}
+
+.form-progress .progress-section .progressline {
+    height: 3px;
+    width: 100%;
+    background-color: #ddd;
+    margin-top: 20px;
+}
+
+.form-progress .progress-section p {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.form-progress .progress-section p span {
+    border: 1px solid #1e1e1e;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.appointment-form-section .container {
+    padding: 56px 0;
+    max-width: 928px;
+    min-height: calc(100vh - 120px);
+}
+
+.appointment-details .date-input  {
+    font-size: 18px;
+}
+
+.appointment-details .date-input input {
+    width: 348px;
+    padding: 12px 8px;
+    border: 1px solid #1e1e1e;
+    border-radius: 50px;    
+}
+
+.time-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.time-options label {
+    cursor: pointer;
+    border: 1px solid #1e1e1e;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 50px;
+
+}
+
+.time-options input[type="radio"] {
+    display: none;
+}
+
+.time-options input[type="radio"]:checked + label {
+    background-color: #5E131F;
+    color: white;
+    font-weight: bold;
+}
+
+.service-options ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.drop-off-container h4 {
+    margin-bottom: 16px;
+}
+
+.drop-off-container input:nth-of-type(2) {
+    margin-left: 24px;
+}
+
+.your-information {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 48px;  
+}
+
+
+.your-information input, .vehicle-information input {
+    width: 100%;
+    padding: 12px 8px;
+    outline: none;
+    border: 1px solid #1e1e1e;
+    border-radius: 50px;
+}
+
+.your-information div:not(:last-of-type), .vehicle-information div:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+.review-submit .info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.form-button-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-top: 48px;
+}
+
+.appointment-details .form-button-section {
+    justify-content: end;
+
+}
+
+.form-button-section button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #5E131F;
+    color: white;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.progress-active-text {
+    font-weight: bold;
+}
+
+.progress-active-number {
+    color: white;
+    background-color: #1e1e1e;
+}
+
+.progress-active-line {
+    background-color: #1e1e1e !important;
+}
+
+.review-service {
+    padding: 4px 14px;
+    background-color: #ebebeb;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.service-info ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 24px;
+}
+
+
+.personal-info p, .vehicle-info p, .date-info p, .service-info p {
+    padding: 4px 0;
+}
+
+.appointment-message {
+    background-color: rgba(60, 225, 60, 0.324);
+    color: rgb(13, 69, 13);
+    padding: 18px 12px;
+    font-weight: bold;
+    letter-spacing: .25px;
+}
+
+.parts .container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    padding: 60px 120px;
+    border-radius: 100px;
+    color: #5E131F;
+    gap: 24px;
+    border: 1px solid #5E131F;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.parts .container form input, .parts .container form textarea, .parts .container form button {
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid #5E131F;
+    padding: 18px 8px;
+    
+}
+
+.parts .container form input, .parts .container form button {
+    border-radius: 50px;
+}
+
+.parts .container form button {
+    background-color: #5E131F;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+

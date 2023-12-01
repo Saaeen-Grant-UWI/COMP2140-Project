@@ -26,8 +26,12 @@ class Admin extends Controller {
                     $this->Report();
                     break;
 
+                case 'Admin':
+                    $this->Appointments();
+                break;
+    
                 default:
-                    $this->Appointments();;
+                    $this->view('_404',$data);
                     break;
             }
             

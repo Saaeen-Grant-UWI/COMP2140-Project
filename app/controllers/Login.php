@@ -19,6 +19,7 @@ class Login extends Controller {
             if(password_verify($_POST['password'], $row->password)) {
 
                Authentication::authenticate($row);
+               message('You have succesfully logged in');
                redirect('Home');
             }
 

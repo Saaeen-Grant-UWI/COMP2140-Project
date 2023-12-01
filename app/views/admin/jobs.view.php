@@ -4,22 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-        }
-
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-         background-color: #dddddd;
-        }
-    </style>
+    <link rel="stylesheet" href="/COMP2140-Project/app/views/admin/admin.css">
+   
 </head>
 <body class="admin-body" >
     <?php $this->view('admin/admin-header'); ?>
@@ -27,20 +13,15 @@
     <?php $this->view('admin/admin-sidebar'); ?>
 
     <section class="jobs-table">
+        <h1>Jobs</h1>
         <form action="" method="get">
             <button type="submit" name="all">All</button>
         </form>
 
-        <?php 
-        
-            if(array_key_exists('find',$_GET)) {
-                echo $data['test'];
-            }
-        ?>
         <table>
             <tr>
-                <th>#</th>
-                <th>vehicle_plate_number</th>
+                <th style="text-align:center;" >#</th>
+                <th style="text-align:center;" >vehicle_plate_number</th>
                 <th>service</th>
                 <th>progress</th>
                 <th>related_appointment_id</th>
@@ -52,7 +33,7 @@
 
             <?php foreach ($data['services'] as $key => $service) { ?>
                 <tr>
-                    <td><?=$key+1?></td>
+                    <td style="text-align:center;" ><?=$key+1?></td>
                     <td><a href="<?=ROOT?>/Admin/Vehicles?plate_search=<?=$service->vehicle_plate_number?>"><?=$service->vehicle_plate_number?></a></td>
                     <td><?=$service->service?></td>
                     <td>

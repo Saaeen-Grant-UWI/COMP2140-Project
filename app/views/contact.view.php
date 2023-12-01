@@ -16,16 +16,17 @@
 
     <div class="parts">
         <div class="container">
-            <form id="message-form2" action="">
-                <h1>Need a Part? Ask us!:</h1>
+            <form id="message-form1" action="">
+                <h1>Want To Get In Touch</h1>
                 <input type="text" placeholder="Enter Name Here">
                 <input type="email" placeholder="Enter Email Here">
-                <textarea name="" id="" cols="30" rows="10"  placeholder="Enter Inquiry Here"></textarea>
+                <textarea name="" id="" cols="30" rows="10"  placeholder="Enter Message Here"></textarea>
                 
-                <button id="send-btn2"type="button">Submit</button>
+                <button id="send-btn1"type="button">Submit</button>
             </form>
         </div>
     </div>
+
     
 </body>
 </html>

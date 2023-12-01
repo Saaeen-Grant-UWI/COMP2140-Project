@@ -1,15 +1,19 @@
-<div class="review-submit">
-    <div class="personal-info">
+<div class="review-submit hide">
+    <div class="info-container">
+        <div class="personal-info">
+        </div>
+        <div class="vehicle-info">
 
+        </div>
+        <div class="date-info">
+        
+        </div>
+        <div class="service-info">
+        
+        </div>
     </div>
-    <div class="vehicle-info">
-    
-    </div>
-    <div class="date-info">
-       
-    </div>
-</div>
-    <div class="service-info">
-       
+    <div class="form-button-section">
+        <button type="button" id="review-submit-back">Back</button>
+        <button type="submit">Submit</button>
     </div>
 </div>

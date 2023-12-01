@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/COMP2140-Project/app/views/admin/admin.css">
+
 
 </head>
 <body class="admin-body">
@@ -12,6 +14,7 @@
     <?php $this->view('admin/admin-sidebar'); ?>
 
    <section class="report">
+        <h1>Vehicle report</h1>
         <div class="vehicle-report-info">
             <h1><?=$data["vehicle_data"]->make." ".$data["vehicle_data"]->model." ".$data["vehicle_data"]->add_model?></h1>
             <h3>Plate number: <?=$data["vehicle_data"]->vehicle_plate_number?></h3>
