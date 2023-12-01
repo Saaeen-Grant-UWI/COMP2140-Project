@@ -1,4 +1,4 @@
-# COMP2140-Project
+# GramacAuto: COMP2140-Project 
 
 This project is an appointment scheduler created for Gramac Auto Repair and Parts Limited. The application also allows users to store vehicle information, customer details, and inquire about the parts needed for their vehicles.
 
