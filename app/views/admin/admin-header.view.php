@@ -1,6 +1,6 @@
 <header>
     <div class="title">
-        <p>GramacAuto</p>
+        <a href="<?=ROOT?>/Home" style="font-size: 20px; color:white;">GramacAuto</a>
     </div>
 
     <?php if(Authentication::logged_in()) { ?>
