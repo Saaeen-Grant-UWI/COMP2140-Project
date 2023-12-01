@@ -52,6 +52,9 @@ td a {
     
 }
 
+h2:not(:first-of-type) {
+    margin-bottom: 12px;
+}
 
 header {
     background-color: #5E131F;

@@ -16,20 +16,22 @@
    <section class="report">
         <h1>Vehicle report</h1>
         <div class="vehicle-report-info">
-            <h1><?=$data["vehicle_data"]->make." ".$data["vehicle_data"]->model." ".$data["vehicle_data"]->add_model?></h1>
+            <h2><?=$data["vehicle_data"]->make." ".$data["vehicle_data"]->model." ".$data["vehicle_data"]->add_model?></h2>
             <h3>Plate number: <?=$data["vehicle_data"]->vehicle_plate_number?></h3>
+            <br>
         </div>
 
         <div class="customer-report-info">
-           <h1>User/Owner Info</h1>
+           <h2>User/Owner Info</h2>
            <p>id: <?=$data["user_data"]->id?></p>
            <p>Name: <?=$data["user_data"]->first_name." ".$data["user_data"]->last_name?></p>
            <p>Phone: <?="(".substr($data["user_data"]->phone_number,0,3).") ".substr($data["user_data"]->phone_number,3,3)." - ".substr($data["user_data"]->phone_number,6,4)?></p>
            <p>Email: <?=$data["user_data"]->email?></p>
         </div>
+        <br>
 
         <div class="appointments-report-info">
-           <h1>Appointment Info</h1>
+           <h2>Appointment Info</h2>
             <?php foreach ($data["appointments_data"] as $key => $appointment) { ?>
                 <div class="appointments">
                     <p>Id: <?=$appointment->id?></p>
@@ -40,9 +42,10 @@
                 <br>
             <?php } ?>
         </div>
+        <br>
 
         <div class="appointments-report-info">
-           <h1>Services Info</h1>
+           <h2>Services Info</h2>
             <?php foreach ($data["services_data"] as $key => $service) { ?>
                 <div class="services">
                     <p>Id: <?=$service->id?></p>
