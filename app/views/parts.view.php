@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../public/assets/javascript/message.js"></script>
+    <script src="../public/assets/javascript/message2.js"></script>
     <link rel="stylesheet" href="../public/assets/css/global.css">
 
 </head>
@@ -22,7 +22,7 @@
                 <input type="email" placeholder="Enter Email Here">
                 <textarea name="" id="" cols="30" rows="10"  placeholder="Enter Inquiry Here"></textarea>
                 
-                <button id="send-btn2"type="button">Submit</button>
+                <button id="send-btn2" type="button">Submit</button>
             </form>
         </div>
     </div>
